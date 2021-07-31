@@ -1,3 +1,4 @@
+using CleanArchitecture.Infra.Data.Context;
 using CleanArchitecture.MVC.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,11 @@ namespace CleanArchitecture.MVC
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("UniversityIdentityDbConnection")));
+
+            services.AddDbContext<UniversityDbContext>(options =>
+              options.UseSqlServer(
+                  Configuration.GetConnectionString("UniversityDbConnection")));
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
