@@ -15,13 +15,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A80483CB-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D7644E4E-9FF6-4293-9DFF-94956C825160}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.MVC", "CleanArchitecture.MVC\CleanArchitecture.MVC.csproj", "{07154B71-6690-47B4-A983-D8705500C300}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07154B71-6690-47B4-A983-D8705500C300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07154B71-6690-47B4-A983-D8705500C300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07154B71-6690-47B4-A983-D8705500C300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07154B71-6690-47B4-A983-D8705500C300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8C0AF43D-6885-4406-9B54-0FDBB172E011} = {964B47ED-0681-4CDE-B21A-1D3E79156BA6}
 		{A80483CB-F958-4ED9-BDD2-1B7B87567EC5} = {964B47ED-0681-4CDE-B21A-1D3E79156BA6}
+		{07154B71-6690-47B4-A983-D8705500C300} = {D7644E4E-9FF6-4293-9DFF-94956C825160}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C15EF24E-72C3-4449-A4B2-20BCF4A3D13C}
