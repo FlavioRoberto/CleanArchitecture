@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infra.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Application", "CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{A2EEC059-F190-4DEC-B3D1-A910C7258A39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infra.IoC", "CleanArchitecture.Infra.IoC\CleanArchitecture.Infra.IoC.csproj", "{B8B1614D-6DBE-4D80-AC72-255067FC2E82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infra.IoC", "CleanArchitecture.Infra.IoC\CleanArchitecture.Infra.IoC.csproj", "{B8B1614D-6DBE-4D80-AC72-255067FC2E82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bus", "Bus", "{614E5147-399E-4816-A480-0B29E65A9DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{FA3FB932-FD44-4B9C-A13F-28ACAD2ABBA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,7 @@ Global
 		{53C9F4E9-932D-4140-83BA-D1EFF8430C8D} = {A80483CB-F958-4ED9-BDD2-1B7B87567EC5}
 		{A2EEC059-F190-4DEC-B3D1-A910C7258A39} = {74E81385-50D2-4C75-BD48-13AE14EF5751}
 		{B8B1614D-6DBE-4D80-AC72-255067FC2E82} = {8C0AF43D-6885-4406-9B54-0FDBB172E011}
+		{614E5147-399E-4816-A480-0B29E65A9DBE} = {964B47ED-0681-4CDE-B21A-1D3E79156BA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C15EF24E-72C3-4449-A4B2-20BCF4A3D13C}
