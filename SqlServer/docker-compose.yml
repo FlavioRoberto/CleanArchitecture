@@ -1,11 +1,9 @@
 version: '3.7'
 services:
     sqlserver:
-        build: 
-          context: .
-          dockerfile: dockerfile
+        image: mcr.microsoft.com/mssql/server
         ports:  
-          - "15789:1433"
+          - "1433:1433"
         env_file:
           - sqlserver.env
           - sapassword.env
@@ -19,3 +17,4 @@ volumes:
   sqldata:
   sqllog:
   sqlbackup:
+

@@ -1,6 +1,7 @@
 using CleanArchitecture.Infra.Data.Context;
 using CleanArchitecture.Infra.IoC;
 using CleanArchitecture.MVC.Data;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -37,6 +38,8 @@ namespace CleanArchitecture.MVC
                 .AddEntityFrameworkStores<ApplicationDbContext>();
          
             services.AddControllersWithViews();
+
+            services.AddMediatR(typeof(Startup));
 
             RegisterServices(services);
         }
