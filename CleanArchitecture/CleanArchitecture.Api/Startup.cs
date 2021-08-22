@@ -1,3 +1,4 @@
+using CleanArchitecture.Api.Configurations;
 using CleanArchitecture.Infra.Data.Context;
 using CleanArchitecture.Infra.IoC;
 using MediatR;
@@ -29,6 +30,8 @@ namespace CleanArchitecture.Api
                 options.UseSqlServer(Configuration.GetConnectionString("UniversityDbConnection")));
 
             services.AddMediatR(typeof(Startup));
+
+            services.RegisterAutoMapper();
 
             DependencyContainer.RegisterServices(services);
         
